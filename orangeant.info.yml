@@ -1,0 +1,25 @@
+name: "OrangeAnt"
+type: theme
+base theme: classy
+description: Drupal 8 Theme
+package: Core
+version: 1.0-dev
+core: 8.x
+engine: twig
+screenshot: img/screenshot1.png
+
+stylesheets:
+  all:
+  - css/style.css
+
+# Remove a CSS file:
+stylesheets-remove:
+  - normalize.css
+
+regions:
+  header: 'Header'
+  content: 'Content'
+  footer: 'Footer'
+
+libraries:
+  - orangeant/global-styling

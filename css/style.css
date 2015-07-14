@@ -1,0 +1,141 @@
+@import url("http://fonts.googleapis.com/css?family=Varela+Round");
+/* No files to import found in abstractions/**\/* */
+/* No files to import found in base/**\/* */
+body {
+  font-family: "Varela Round", sans-serif;
+  color: gray; }
+
+p {
+  margin-top: 0; }
+
+a {
+  color: #f04923;
+  text-decoration: none; }
+
+a:hover {
+  color: black; }
+
+h1, h2, h3, h4, h5 {
+  color: black;
+  font-weight: normal; }
+
+.form-search {
+  border: 1px solid #cccccc;
+  border-radius: 15px;
+  padding: 3px 10px;
+  color: gray; }
+
+.node__sidebar {
+  background-color: #ef9c25;
+  padding: 1rem; }
+  .node__sidebar .field-node--field-photo {
+    max-width: 200px;
+    margin: 0 auto; }
+    .node__sidebar .field-node--field-photo img {
+      width: 100%;
+      height: auto; }
+  .node__sidebar .field {
+    font-size: 0.9rem;
+    color: white; }
+  .node__sidebar .field-node--body {
+    margin-top: 1rem; }
+  .node__sidebar p {
+    font-size: 1rem;
+    color: white; }
+  .node__sidebar h2 .field {
+    margin-bottom: 0.5rem;
+    color: white;
+    font-size: 1.8rem; }
+  .node__sidebar a {
+    color: white; }
+
+.node__content p {
+  font-size: 1.5rem;
+  line-height: 2.25rem; }
+
+.field-node--field-main-content-reference {
+  background-color: #cecece;
+  padding: 1.5rem 3rem; }
+  .field-node--field-main-content-reference .field {
+    font-size: 0.9rem;
+    color: #777777; }
+  .field-node--field-main-content-reference .field-node--body {
+    margin-top: 1rem; }
+  .field-node--field-main-content-reference .field-node--field-event-photo {
+    float: left;
+    clear: left;
+    max-width: 220px; }
+  .field-node--field-main-content-reference .field-node--field-event-date,
+  .field-node--field-main-content-reference .field-node--field-location,
+  .field-node--field-main-content-reference .field-node--field-contact {
+    margin-left: 250px; }
+  .field-node--field-main-content-reference p {
+    font-size: 1rem;
+    line-height: 1.1rem;
+    color: #333333; }
+  .field-node--field-main-content-reference .field-node--field-subhead,
+  .field-node--field-main-content-reference h2 .field {
+    color: #333333;
+    font-size: 1.8rem; }
+  .field-node--field-main-content-reference a {
+    color: white; }
+
+#block-footercopyrightblock {
+  padding: 0.5rem; }
+  #block-footercopyrightblock p {
+    margin-bottom: 0;
+    font-size: 0.75rem; }
+
+.main-content-container {
+  width: 95%;
+  max-width: 1020px;
+  margin: 0 auto; }
+  @media (min-width: 1019px) {
+    .main-content-container {
+      margin: 0 auto; } }
+
+@media (min-width: 0) and (max-width: 750px) {
+  .node-content__wrapper {
+    display: flex;
+    flex-direction: column; }
+
+  .node__content {
+    flex: 1 1 auto; }
+
+  .node__sidebar {
+    flex: 1 1 auto; } }
+@media (min-width: 751px) {
+  .node-content__wrapper {
+    display: flex;
+    flex-direction: row; }
+
+  .node__content {
+    flex: 1 1 70%;
+    margin-right: 2rem; }
+
+  .node__sidebar {
+    flex: 1 0 30%;
+    max-width: 300px; } }
+.region-footer {
+  width: 100%;
+  background: gray;
+  color: white;
+  margin-top: 2rem; }
+
+.primary-nav .menu {
+  padding: 0;
+  margin: 1em 0;
+  display: flex;
+  flex-direction: row; }
+  .primary-nav .menu li {
+    flex: 1 0 auto;
+    margin-right: 1em; }
+    .primary-nav .menu li a {
+      display: flex;
+      padding: 0.5rem 1rem;
+      border: 1px solid #ef9c25;
+      text-align: center;
+      color: #ef9c25; }
+      .primary-nav .menu li a:hover {
+        color: #f04923;
+        border: 1px dotted #f04923; }

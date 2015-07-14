@@ -1,0 +1,37 @@
+.main-content-container 
+  width: 95%
+  max-width: 1020px
+  margin: 0 auto
+
+  +breakpoint(1019px)
+    margin: 0 auto
+
++breakpoint(0 750px)
+  .node-content__wrapper
+    display: flex
+    flex-direction: column
+
+  .node__content
+    flex: 1 1 auto
+
+  .node__sidebar
+    flex: 1 1 auto
+
++breakpoint(751px)
+  .node-content__wrapper
+    display: flex
+    flex-direction: row
+
+  .node__content
+    flex: 1 1 70%
+    margin-right: 2rem
+
+  .node__sidebar
+    flex: 1 0 30%
+    max-width: 300px
+
+.region-footer
+  width: 100%
+  background: gray
+  color: white
+  margin-top: 2rem

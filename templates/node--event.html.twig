@@ -1,7 +1,7 @@
 {#
 /**
  * @file
- * Default theme implementation to display an Event display.
+ * Default theme implementation to display an Event.
  *
  * Available variables:
  * - node: Full node entity.
@@ -70,15 +70,20 @@
  */
 #}
 
-  {{ title_prefix }}
-  {% if view_mode == "sidebar_view_mode" %}
-    <h2{{ title_attributes }}>
-      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-    </h2>
+  {# This is a test to see if the Sidebar Event Display is invoked #}
+  {% if view_mode == "sidebar_event_display" %}
+    <div class="node__event-sidebar">
+      <h2>
+        <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+      </h2>
+      <div class="content-wrapper">
+        {{ content }}
+      </div>
+    </div>
+
+  {# If it's not the Sidebar Event Display the following will print #}
+  {% else %}
+    <div class="node__event-main">
+      {{ content }}
+    </div>
   {% endif %}
-  {{ title_suffix }}
-
-  <div class="content-wrapper">
-    {{ content }}
-  </div>
-

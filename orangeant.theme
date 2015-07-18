@@ -1,0 +1,10 @@
+<?php 
+
+// Creating variables to test whether the Entity References are not empty.
+
+function orangeant_preprocess_node(&$variables) {
+  $node = $variables['node'];
+
+  $variables['has_sidebar'] = !empty($node->field_sidebarevent->target_id);
+  $variables['has_main'] = !empty($node->field_mainevent->target_id);
+}

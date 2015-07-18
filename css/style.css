@@ -53,31 +53,31 @@ h1, h2, h3, h4, h5 {
   font-size: 1.5rem;
   line-height: 2.25rem; }
 
-.field-node--field-main-content-reference {
+.node__event-main {
   background-color: #cecece;
   padding: 1.5rem 3rem; }
-  .field-node--field-main-content-reference .field {
+  .node__event-main .field {
     font-size: 0.9rem;
     color: #777777; }
-  .field-node--field-main-content-reference .field-node--body {
+  .node__event-main .field-node--body {
     margin-top: 1rem; }
-  .field-node--field-main-content-reference .field-node--field-event-photo {
+  .node__event-main .field-node--field-photo {
     float: left;
     clear: left;
     max-width: 220px; }
-  .field-node--field-main-content-reference .field-node--field-event-date,
-  .field-node--field-main-content-reference .field-node--field-location,
-  .field-node--field-main-content-reference .field-node--field-contact {
+  .node__event-main .field-node--field-event-date,
+  .node__event-main .field-node--field-location,
+  .node__event-main .field-node--field-contact {
     margin-left: 250px; }
-  .field-node--field-main-content-reference p {
+  .node__event-main p {
     font-size: 1rem;
     line-height: 1.1rem;
     color: #333333; }
-  .field-node--field-main-content-reference .field-node--field-subhead,
-  .field-node--field-main-content-reference h2 .field {
+  .node__event-main .field-node--field-subhead,
+  .node__event-main h2 .field {
     color: #333333;
     font-size: 1.8rem; }
-  .field-node--field-main-content-reference a {
+  .node__event-main a {
     color: white; }
 
 #block-footercopyrightblock {

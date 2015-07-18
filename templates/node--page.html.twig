@@ -1,7 +1,7 @@
 {#
 /**
  * @file
- * Default theme implementation to display a node.
+ * Default theme implementation to display a Page.
  *
  * Available variables:
  * - node: Full node entity.
@@ -80,7 +80,6 @@
   ]
 %}
 <article{{ attributes.addClass(classes) }}>
-
   {{ title_prefix }}
   {% if not page %}
     <h2{{ title_attributes }}>
@@ -89,23 +88,22 @@
   {% endif %}
   {{ title_suffix }}
 
-  {% if display_submitted %}
-    <footer class="node__meta">
-      {{ author_picture }}
-      <div{{ author_attributes.addClass('node__submitted') }}>
-        {% trans %}Submitted by {{ author_name|passthrough }} on {{ date|passthrough }}{% endtrans %}
-        {{ metadata }}
-      </div>
-    </footer>
-  {% endif %}
   <div class="node-content__wrapper">
     <div{{ content_attributes.addClass('node__content') }}>
       {{ content.body }}
-      {{ content.field_main_content_reference }}
+
+      {# This is where we will add our main event field #}
+      {% if has_main %}
+        {{ content.field_mainevent }}
+      {% endif %}
     </div>
-    <div class="node__sidebar">
-      {{ content.field_sidebar_reference }}
-    </div>
+
+    {# This is where we will add our sidebar event field #}
+    {% if has_sidebar %}
+      <div class="node__sidebar">
+        {{ content.field_sidebarevent }}
+      </div>
+    {% endif %}
   </div>
 
 </article>
